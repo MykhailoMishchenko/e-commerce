@@ -1,0 +1,57 @@
+@import "fonts.scss";
+@import "constans.scss";
+
+* {
+  font-family: $Regular;
+  font-size: $Main-size;
+  line-height: $Main-interval;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $Head-regular;
+}
+
+h2 {
+  padding: 70px 0;
+}
+
+h1 {
+  font-size: $Head-1-size;
+  line-height: $Head-1-interval;
+}
+
+h2 {
+  font-size: $Head-2-size;
+  line-height: $Head-2-interval;
+}
+
+h3 {
+  font-size: $Head-3-size;
+  line-height: $Head-3-interval;
+}
+
+h3 {
+  font-size: $Head-4-size;
+  line-height: $Head-4-interval;
+}
+
+a {
+  font-size: $Link-size;
+  line-height: $Link-interval;
+  color: $Dark;
+  text-decoration: none;
+}
+
+p {
+  font-family: $Regular;
+  font-size: $Main-size;
+  line-height: $Main-interval;
+}
+
+button {
+  color: $White;
+  cursor: pointer;
+}
