@@ -1,0 +1,21 @@
+@import "src/styles/constans";
+
+.newPrice {
+  font-weight: bold;
+  position: relative;
+
+  &::before {
+    content: attr(data-price);
+    position: absolute;
+    top: -15px;
+    left: 0;
+    font-size: 12px;
+    font-weight: bold;
+    color: $Red;
+    text-decoration: line-through;
+  }
+}
+
+.priceOfProduct {
+  font-weight: bold;
+}

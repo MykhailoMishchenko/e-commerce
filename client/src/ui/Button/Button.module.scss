@@ -1,0 +1,43 @@
+@import "src/styles/constans";
+
+.button {
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  color: white;
+
+  &.sm {
+    padding: 0.75*0.5rem 0.75*1rem;
+  }
+
+  &.md {
+    padding: 1*0.5rem 1*1rem;
+  }
+
+  &.lg {
+    padding: 1.5*0.5rem 1.5*1rem;
+  }
+
+  &.primary {
+    background-color: $Keppel;
+  }
+
+  &.secondary {
+    background-color: $Celadon;
+  }
+
+  &.outline {
+    border: 1px solid $Keppel;
+    background-color: transparent;
+    color: $Dark;
+  }
+}
+
+
+
+.loading {
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  color: yellow;
+}

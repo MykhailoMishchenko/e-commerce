@@ -1,0 +1,40 @@
+@import "src/styles/constans";
+
+.title {
+  width: 100%;
+  text-decoration: none;
+
+  & p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+    margin-top: 16px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    opacity: 0.6;
+  }
+}
+
+.title-lg {
+  width: 100%;
+
+  & p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+    opacity: 0.6;
+  }
+}
+
+.title-md {
+  width: 100%;
+
+  & p {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.06em;
+    opacity: 0.6;
+  }
+}

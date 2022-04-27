@@ -1,0 +1,95 @@
+@import "src/styles/constans";
+@import "src/styles/mixin";
+
+.navigation {
+  border-bottom: 2px solid $Dark;
+}
+
+.optional {
+  padding: 6px 0 12px;
+
+  & a {
+    text-decoration: none;
+
+    & h1 {
+      font-size: $Head-1-size;
+      font-family: $Head-logo;
+      cursor: pointer;
+    }
+  }
+  & ul {
+    list-style: none;
+
+    & li a {
+      text-decoration: none;
+      position: relative;
+    }
+
+    & .active::before {
+      content: "";
+      width: 23px;
+      height: 10px;
+      background: url("../../../assets/icon/triangle.svg") no-repeat;
+      position: absolute;
+      top: 105%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  & .links {
+    @include flexGap(20px);
+
+    & a {
+      padding: 25px 0;
+    }
+  }
+
+  & .userProfile {
+    @include flexGap(23px);
+
+    & .circle {
+      position: relative;
+
+      & .userProfileActive {
+        position: relative;
+      }
+
+      &::after {
+        content: attr(data-cart);
+        position: absolute;
+        top: 40%;
+        right: -10px;
+        width: 15px;
+        height: 15px;
+        padding: 3px;
+        border-radius: 100%;
+        font-size: $Link-size;
+        background-color: $Red;
+        color: $White;
+        @include flexCenter();
+        font-weight: 500;
+      }
+    }
+
+    & a {
+      padding: 18px 0;
+    }
+
+    .login {
+      border: 2px solid rgba(0, 0, 0, 0.5);
+      padding: 5px 15px;
+      border-radius: 5px;
+    }
+  }
+}
+
+.userProfileActive::before {
+  content: "";
+  width: 23px;
+  height: 10px;
+  background: url("../../../assets/icon/triangle.svg") no-repeat;
+  position: absolute;
+  top: 112%;
+  left: 50%;
+  transform: translateX(-50%);
+}

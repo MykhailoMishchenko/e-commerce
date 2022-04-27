@@ -1,0 +1,14 @@
+@import "src/styles/constans";
+@import "src/styles/mixin";
+
+.discount {
+  position: absolute;
+  inset: 0;
+  width: 53px;
+  height: 31px;
+  color: $White;
+  background-color: $Pink;
+  font-weight: bold;
+  display: flex;
+  @include flexCenter();
+}

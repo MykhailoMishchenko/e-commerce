@@ -1,0 +1,20 @@
+@import "src/styles/constans";
+@import "src/styles/mixin";
+
+.block {
+  @include flexCenter();
+  background-color: $Grey;
+
+  &.sm {
+    width: 255px;
+    height: 200px;
+  }
+  &.md {
+    width: 539.5px;
+    height: 260px;
+  }
+  &.lg {
+    width: 540px;
+    height: 490px;
+  }
+}
