@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Image.module.scss";
 import PropTypes from "prop-types";
+
 import {NavLink} from "react-router-dom";
 
 const Image = ({id, image, name, size, sale, percent}) => {

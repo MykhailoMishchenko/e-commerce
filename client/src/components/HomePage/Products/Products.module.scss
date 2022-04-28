@@ -1,0 +1,19 @@
+@import "src/styles/constans";
+
+.button {
+  width: 100%;
+  display: block;
+  text-decoration: none;
+  letter-spacing: 0.06em;
+  opacity: 0.8;
+  margin-top: 25px;
+  cursor: pointer;
+
+  padding: 17.6px 32px 15.4px 32px;
+  background-color: $White;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $Dark;
+  font-family: $Bold;
+}

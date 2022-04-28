@@ -1,6 +1,8 @@
-import PropTypes from "prop-types";
-import {Link} from "react-router-dom";
+import React from "react";
 import styles from "./Button.module.scss";
+import PropTypes from "prop-types";
+
+import {Link} from "react-router-dom";
 
 const Button = ({
   text,

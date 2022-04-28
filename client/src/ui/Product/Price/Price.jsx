@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Price.module.scss";
 import PropTypes from "prop-types";
+
 import {calcSalePrice, getLastPrice} from "../../../utils/calcPrice";
 
 const Price = ({sale, price, percent}) => {

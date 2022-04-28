@@ -1,9 +1,12 @@
 import React from "react";
 import styles from "./Links.module.scss";
+
 import Container from "../../../ui/Container/Container";
-import {CONTAINER_WIDTH} from "../../../constans";
 import FlexRow from "../../../ui/Flex/FlexRow/FlexRow";
+
 import {NavLink, useNavigate} from "react-router-dom";
+
+import {CONTAINER_WIDTH} from "../../../constans";
 
 import {ReactComponent as User} from "../../../assets/icon/user.svg";
 import {ReactComponent as Bag} from "../../../assets/icon/shopping-bag.svg";

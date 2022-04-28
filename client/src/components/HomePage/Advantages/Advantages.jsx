@@ -1,12 +1,14 @@
 import React from "react";
 import styles from "./Advantages.module.scss";
+
+import Container from "../../../ui/Container/Container";
+import FlexRow from "../../../ui/Flex/FlexRow/FlexRow";
+
+import {CONTAINER_WIDTH} from "../../../constans";
+
 import {ReactComponent as Truck} from "../../../assets/icon/truck.svg";
 import {ReactComponent as Refresh} from "../../../assets/icon/refresh.svg";
 import {ReactComponent as Support} from "../../../assets/icon/support.svg";
-import Container from "../../../ui/Container/Container";
-import {CONTAINER_WIDTH} from "../../../constans";
-import FlexRow from "../../../ui/Flex/FlexRow/FlexRow";
-
 
 const Advantages = () => {
 
@@ -14,20 +16,20 @@ const Advantages = () => {
     {
       id: "1",
       icon: Truck,
-      title: "Бесплатная доставка",
-      text: "По всей украине при заказе от 1399 гривен ₴."
+      title: "Безкоштовна доставка",
+      text: "По всій України при замовленні від 1399 гривень ₴."
     },
     {
       id: "2",
       icon: Refresh,
-      title: "Возврат в течении 30 дней",
-      text: "Возврат товара в течении 30 дней с момента покупки."
+      title: "Повернення протягом 30 діб",
+      text: "Повернення продукції можливе протягом 30 днів з моменту покупки."
     },
     {
       id: "3",
       icon: Support,
-      title: "Поддержка 24/7",
-      text: "Пишите нам. Мы работаем 24 часа в сутки. 7 дней в неделю."
+      title: "Підтримка 24/7",
+      text: "Пишіть нам. Ми працюємо 24 години на добу. 7 днів на тиждень."
     },
   ];
 

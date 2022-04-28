@@ -1,15 +1,17 @@
 import React from "react";
 import "../../../styles/swiper-bundle.css";
 import styles from "./Banner.module.scss";
-import FlexRow from "../../../ui/Flex/FlexRow/FlexRow";
+
 import Container from "../../../ui/Container/Container";
-import {CONTAINER_WIDTH} from "../../../constans";
+import FlexRow from "../../../ui/Flex/FlexRow/FlexRow";
+import FlexColumn from "../../../ui/Flex/FlexColumn/FlexColumn";
 import Block from "../../../ui/Block/Block";
+
 import {Swiper, SwiperSlide} from "swiper/react";
 import SwiperCore, {Autoplay} from "swiper/core";
-// import bannerWoman from "../../../assets/mock/banner-woman.jpeg";
-// import bannerMan from " ../../../assets/mock/banner-man.jpeg";
-// import bannerAccessories from "../../../assets/mock/accessories.svg";
+
+import {CONTAINER_WIDTH} from "../../../constans";
+
 import woman from "../../../assets/mock/banner-woman.jpeg"
 import man from "../../../assets/mock/banner-man.jpeg"
 import accessories from "../../../assets/mock/accessories.svg"
@@ -18,11 +20,10 @@ import two from "../../../assets/slider/slider-1.jpeg";
 import tree from "../../../assets/slider/slider-2.jpeg";
 import four from "../../../assets/slider/slider-4.jpeg";
 import five from "../../../assets/slider/slider-5.jpeg";
-import FlexColumn from "../../../ui/Flex/FlexColumn/FlexColumn";
 
 SwiperCore.use([Autoplay]);
 
-const Banner = () => {
+const Banners = () => {
 
   const data = [
     {id: "1", src: one, desc: "Нова Колекція!"},
@@ -78,4 +79,4 @@ const Banner = () => {
   );
 };
 
-export default Banner;
+export default Banners;

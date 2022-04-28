@@ -1,5 +1,7 @@
 import React from "react";
 import styles from "./Block.module.scss";
+import PropTypes from "prop-types";
+
 import {useNavigate} from "react-router-dom";
 
 const Block = ({
@@ -27,5 +29,14 @@ const Block = ({
     </div>
   );
 };
+
+Block.propTypes = {
+  size: PropTypes.oneOf(["sm", "md", "lg"]),
+  to: PropTypes.string,
+  optional: PropTypes.string
+}
+Block.defaultProps = {
+  size: "sm",
+}
 
 export default Block;

@@ -2,6 +2,8 @@ import React from "react";
 import styles from "./Address.module.scss";
 
 import Container from "../../../ui/Container/Container";
+import FlexRow from "../../../ui/Flex/FlexRow/FlexRow";
+
 import {CONTAINER_WIDTH} from "../../../constans";
 
 import {ReactComponent as Phone} from "../../../assets/icon/phone-bold.svg";
@@ -9,7 +11,6 @@ import {ReactComponent as Location} from "../../../assets/icon/location-bold.svg
 import {ReactComponent as Clock} from "../../../assets/icon/clock.svg";
 import {ReactComponent as Facebook} from "../../../assets/icon/facebook.svg";
 import {ReactComponent as Instagram} from "../../../assets/icon/instagram.svg";
-import FlexRow from "../../../ui/Flex/FlexRow/FlexRow";
 
 const Address = () => {
   return (

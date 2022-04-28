@@ -1,6 +1,9 @@
 import React from "react";
 import styles from "./Details.module.scss";
+import PropTypes from "prop-types";
+
 import {calcSalePrice, getLastPrice} from "../../../utils/calcPrice";
+
 import {ReactComponent as Trash} from "../../../assets/icon/trash.svg";
 
 const Details = ({category, brand, gender, countInStock, sale, percent, price, id, dispatch, size}) => {
@@ -78,5 +81,18 @@ const Details = ({category, brand, gender, countInStock, sale, percent, price, i
     </div>
   );
 };
+
+Details.propTypes = {
+  id: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  category: PropTypes.string.isRequired,
+  brand: PropTypes.string.isRequired,
+  gender: PropTypes.string.isRequired,
+  sale: PropTypes.bool.isRequired,
+  price: PropTypes.number.isRequired,
+  percent: PropTypes.number.isRequired,
+  countInStock: PropTypes.number.isRequired,
+  size: PropTypes.string,
+}
 
 export default Details;
